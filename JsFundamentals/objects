@@ -1,0 +1,35 @@
+//in object we can define key value pairs
+// object literal syntax (because we are literally writing down the entire object content)
+const myData = {
+  name: 'Kamila',
+  lastName: 'Dynysiuk',
+  age: 2037 - 1990,
+  job: 'Front end developer',
+  friends: ['Anna', 'Jon', 'Elizabeth'],
+};
+// we use objects to essentially group together different variables that really belong together
+
+//Different between array and object is that in objects, the order of these values doesn't not matter at all when we want to retrieve them
+
+//get data from object
+// 1. using dot notation
+console.log(myData.name); //Kamila
+
+//2. bracket notation
+console.log(myData['name']);
+// brackets gave us the correct result , because put here between these brackets will get evaluated
+const interestedIn = prompt(
+  'The basic information about user Kamila? Choose between name, lastName, age, and friends'
+);
+console.log(myData[interestedIn]);
+
+// add new properties to objects
+myData.location = 'Opole';
+myData['instagram'] = '@kamiladynysiuk';
+console.log(myData);
+
+//use data from object
+
+console.log(
+  `${myData.name} lives in ${myData.location}, she is ${myData.age} and has ${myData.friends.length} friends`
+);
